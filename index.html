@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Movie Explorer</h1>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button id="searchButton">Search</button>
+            <button id="toggleTheme">Toggle Theme</button>
+        </div>
+    </header>
+    <div id="loader" class="loader"></div>
+    <div id="movieGrid" class="movie-grid"></div>
+
+    <!-- Modal -->
+    <div id="movieModal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modalImage" class="modal-image" src="" alt="Movie Poster">
+        <h2 id="modalTitle"></h2>
+        <p id="modalOverview"></p>
+    </div>
+
+    <!-- Add these elements in your HTML -->
+<div id="loader" style="display: none;">Loading...</div>
+<div id="movieGrid"></div>
+<div id="movieModal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Movie Poster">
+    <h2 id="modalTitle"></h2>
+    <p id="modalOverview"></p>
+</div>
+<input type="text" id="searchInput" placeholder="Search for movies...">
+<button id="searchButton">Search</button>
+<button id="toggleTheme">Toggle Theme</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
